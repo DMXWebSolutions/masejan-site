@@ -45,45 +45,34 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-3 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/index/port1.jpg');" data-link="recepcao-hotel-mj">
+            <div class="col-md-4 mb-3">
+              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/haddock/2.jpeg');" data-link="recepcao-hotel-mj">
                 <div class="d-flex">
                   <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
                       <p class="text-shadow text-xs-center mt-xs-75 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
-                        RECEPÇÃO<br>HOTEL MJ
+                        HADDOCK<br>BUSINESS
                       </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/index/port2.jpg');" data-link="recepcao-hotel-mj">
+            <div class="col-md-4 mb-3">
+              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/americana_s/5.jpeg');" data-link="recepcao-hotel-mj">
                 <div class="d-flex">
                   <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
                       <p class="text-shadow text-xs-center mt-xs-50 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
-                        RECEPÇÃO<br>EDIFÍCIO<br>COMEC
+                        AMERICANA<br>AVENUE
                       </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/index/port3.jpg');" data-link="recepcao-hotel-mj">
+            <div class="col-md-4 mb-3">
+              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/botafogo/10.jpeg');" data-link="recepcao-hotel-mj">
                 <div class="d-flex flex-row">
                   <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
                       <p class="text-shadow text-xs-center mt-xs-50 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
-                        SALA DE<br>ESPERA<br>IND.
-                      </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/index/port4.jpg');" data-link="recepcao-hotel-mj">
-                <div class="d-flex">
-                  <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
-                      <p class="text-shadow text-xs-center mt-xs-75 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
-                        IMAGINE<br>STOUREG
+                        BOTAFOGO<br>TRADE<br>CENTER
                       </p>
                   </div>
                 </div>
@@ -134,10 +123,21 @@
           $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpg'); 
 
                 
-          if(pasta == "recepcao-hotel-mj") {
+          if(pasta == "haddock") {
                   
-            legenda.innerHTML = "Recepção Hotel MJ | Foto: " + count;  
+            legenda.innerHTML = "HADDOCK BUSINESS | Foto: " + count;  
                 
+          }
+
+          if(pasta == "americana_s") {
+                  
+            legenda.innerHTML = "AMERICANA AVENUE | Foto: " + count;  
+                      
+          }
+          if(pasta == "haddock") {
+                  
+            legenda.innerHTML = "BOTAFOGO TRADE CENTER | Foto: " + count;  
+                      
           }
 
           $('#modal-gallery').modal('show'); 
