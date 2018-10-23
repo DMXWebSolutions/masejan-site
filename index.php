@@ -36,7 +36,7 @@
 
 
   <?php include 'templates/header.php'; ?>
-  
+
   <?php include 'components/Sobre.php'; ?>  
 
 
@@ -103,11 +103,9 @@
 
         <div class="d-md-flex justify-content-center"> 
 
-          <div>
-            <img src="imagens/index/projetos.jpg" class="w-100">
-          </div>
+          <div class="w-100" style="background-image: url('imagens/index/projetos.jpg'); background-size: 100% 100%;"></div>
 
-          <div class="bg-gray w-81 p-5">
+          <div class="bg-gray w-100 p-5">
             <h2 class="text-white raleway-300">Projetos</h2> <hr class="mt-0 border-opacity-white-70" />
 
             <p class="raleway-400 mt-5 mb-5 ls-05 text-light">
