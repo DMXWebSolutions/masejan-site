@@ -46,7 +46,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/haddock/2.jpeg');" data-link="recepcao-hotel-mj">
+              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/haddock/2.jpeg');" data-link="haddock">
                 <div class="d-flex">
                   <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
                       <p class="text-shadow text-xs-center mt-xs-75 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
@@ -57,7 +57,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/americana_s/5.jpeg');" data-link="recepcao-hotel-mj">
+              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/americana_s/1.jpeg');" data-link="americana_s">
                 <div class="d-flex">
                   <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
                       <p class="text-shadow text-xs-center mt-xs-50 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/botafogo/10.jpeg');" data-link="recepcao-hotel-mj">
+              <div class="click shadow img-portfolio w-100 h-min-200 rounded-2" style="background-image: url('imagens/portfolio/botafogo/3.jpeg');" data-link="botafogo">
                 <div class="d-flex flex-row">
                   <div class="bg-opacity-orange-hot-04 w-min-50 h-min-200">
                       <p class="text-shadow text-xs-center mt-xs-50 mt-md-2 ml-2 align-bottom fs-17 ls-1 text-white varela">
@@ -154,7 +154,7 @@
         var pasta;
         var count;
 
-        var limiteRecepcaoHotelMj = 3;
+        var limiteRecepcaoHotelMj = 4;
         var legenda = document.getElementById("legenda");
 
         $(document).ready(function() { 
@@ -168,53 +168,45 @@
                 count = 1;
                 pasta = $(this).attr("data-link");
 
-                $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpg'); 
-
+                $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpeg');
                 
-                if(pasta == "recepcao-hotel-mj") {
-                  
-                  legenda.innerHTML = "Recepção Hotel MJ | Foto: " + count;  
-                
+                if(pasta == "haddock") {
+                  legenda.innerHTML = "HADDOCK BUSINESS";  
                 }
-
-
+      
+                if(pasta == "americana_s") {  
+                  legenda.innerHTML = "AMERICANA AVENUE";         
+                }
+                if(pasta == "botafogo") {     
+                  legenda.innerHTML = "BOTAFOGO TRADE CENTER";             
+                }
                 $('#modal-gallery').modal('show'); 
-
             });
 
 
             $(".click-next").click(function() {
-
-
-                if(count < limiteRecepcaoHotelMj) {
-                    
-                    count++;
-                }
-
-                console.log(count);
-
+              if(count < limiteRecepcaoHotelMj) {
+                return count++;
+              }
             });
             $(".click-previous").click(function() {
-
-                count--;
-
-                if(count <= 1) {
-
-                    count = 1;
-                }
-
-                console.log(count);
-
+              count--;
+              if(count <= 1) {
+                return count = 1;
+              }
             });
 
 
             $(".click-next , .click-previous").click(function() {
 
-              if(pasta == "recepcao-hotel-mj") {
-
-                  $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpg');
-
-                  legenda.innerHTML = "Recepção Hotel MJ | Foto: " + count;  
+              if(pasta == "haddock") {  
+                $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpeg');
+              }
+              if(pasta == "americana_s") {  
+                $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpeg');
+              }
+              if(pasta == "botafogo") {  
+                $("#img-zoom").attr('src','imagens/portfolio/'+pasta+'/'+count+'.jpeg');
               }
 
             });

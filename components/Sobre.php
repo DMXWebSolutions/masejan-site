@@ -9,9 +9,9 @@
                     
                   </p>
 
-                  <a href="quem-somos.php#quem-somos" id="btn-conheca-nos" class="text-dark border border-dark p-3 raleway-700 ls-1" style="display: none;">
+                  <button href="quem-somos.php#quem-somos" id="btn-conheca-nos" class="text-dark border border-dark p-3 raleway-700 ls-1 btn-conhecanos" style="display: none;">
                     Conheça mais da nossa história
-                  </a>
+                  </button>
 
               </div>
               <div class="col-md-6 col-sm-6">
